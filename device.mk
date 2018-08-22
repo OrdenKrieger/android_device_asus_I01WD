@@ -72,6 +72,7 @@ PRODUCT_COPY_FILES += \
 
 # Boot control
 PRODUCT_PACKAGES_DEBUG += \
+    android.hardware.boot@1.0-impl.recovery \
     bootctl
 
 # Camera
@@ -145,15 +146,10 @@ PRODUCT_PACKAGES += \
 
 # Update engine
 PRODUCT_PACKAGES += \
+    bootctrl.msmnile.recovery \
     update_engine \
     update_engine_sideload \
     update_verifier
-
-PRODUCT_STATIC_BOOT_CONTROL_HAL := \
-    bootctrl.msmnile \
-    libcutils \
-    libgptutils.asus_msmnile.recovery \
-    libz \
 
 PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
