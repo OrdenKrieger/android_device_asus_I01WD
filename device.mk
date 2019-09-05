@@ -120,23 +120,14 @@ PRODUCT_PACKAGES += \
 
 # NFC
 PRODUCT_PACKAGES += \
-    NQNfcNci \
+    NfcNci \
+    SecureElement \
     Tag \
-    com.android.nfc_extras \
-    com.nxp.nfc.nq \
-    nqnfcee_access.xml \
-    nqnfcse_access.xml
+    com.android.nfc_extras
 
 # Power
 PRODUCT_PACKAGES += \
     power.qcom:64
-
-# Telephony
-PRODUCT_PACKAGES += \
-    telephony-ext
-
-PRODUCT_BOOT_JARS += \
-    telephony-ext
 
 # Touch
 PRODUCT_PACKAGES += \
