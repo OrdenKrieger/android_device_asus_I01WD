@@ -131,6 +131,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     power.qcom:64
 
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH)
+
 # Touch
 PRODUCT_PACKAGES += \
     lineage.touch@1.0-service.asus_msmnile
