@@ -36,6 +36,10 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
+# Permissions
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml
+
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
